@@ -1,11 +1,11 @@
 CHIP A5Q1 {
 
-    IN x;
-    OUT out[4];
+    IN a, b;
+    OUT out;
 
     PARTS:
     Not (in=a, out=nota);
     Or (a=nota, b=b, out=x);
-    Not (in=notx, out=out[4]);
+    Not (in=notx, out=out);
 
 }
