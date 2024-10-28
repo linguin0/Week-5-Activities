@@ -5,7 +5,7 @@ CHIP A5Q1 {
 
     PARTS:
     Not (in=a, out=nota);
-    Or (a=a, b=b, out=x);
+    Or (a=nota, b=b, out=x);
     Not (in=x, out=out[4]);
 
 }
