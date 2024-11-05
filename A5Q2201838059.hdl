@@ -7,7 +7,7 @@ CHIP A5Q2201838059 {
     Not(in=C, out=notC);
     Not(in=J, out=notJ);
 
-    Or(a=notT, b=notC, out=notTorC};
+    Or(a=notT, b=notC, out=notTorC);
     And(a=notT, b=notC, out=notTandC);
 
     Or(a=notTorC, b=notTandC, out=x);
