@@ -1,0 +1,21 @@
+CHIP BINARY {
+
+    IN a1, a0, b1, b0;
+    OUT out;
+
+    PARTS:
+    NOT (in=b1, out=notb1);
+    NOT (in=b0, out=notb0);
+
+    AND (a=a1, b=notb0, out=c);
+
+    AND (a=notb0, b=notb1, out=d);
+    AND (a=d, b=a0, out=e);
+
+    AND (a=notb0, b=a0, out=f);
+    AND (a=f, b=a1, out=g);
+
+    OR (a=c, b=e, out=x);
+    OR (a=x, b=g, out=out);
+
+}
