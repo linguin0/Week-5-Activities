@@ -1,6 +1,6 @@
 CHIP A5Q2201838059 {
     IN T, C, J;
-    OUT out;
+    OUT V;
 
     PARTS:
     Not(in=T, out=notT);
@@ -12,5 +12,5 @@ CHIP A5Q2201838059 {
 
     Or(a=notTorC, b=notTandC, out=x);
     
-    And(a=notJ, b=x, out=out);
+    And(a=notJ, b=x, out=V;
 }
