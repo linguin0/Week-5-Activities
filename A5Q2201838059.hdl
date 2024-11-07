@@ -12,5 +12,5 @@ CHIP A5Q2201838059 {
 
     Or(a=notTorC, b=notTandC, out=x);
     
-    And(a=notJ, b=x, out=V;
+    And(a=notJ, b=x, out=V);
 }
